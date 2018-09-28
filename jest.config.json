@@ -1,11 +1,14 @@
 {
+  "setupFiles": [
+    "./jest.setup.js"
+  ],
   "testMatch": [
     "**/?(*.)(spec|test).js"
   ],
   "testPathIgnorePatterns": [
     "/node_modules/"
   ],
-  "testEnvironment": "node",
+  "testEnvironment": "jsdom",
   "collectCoverageFrom": [
     "src/**/*.{js}"
   ]

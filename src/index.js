@@ -1,5 +1,5 @@
-const sum = (a, b) => a + b
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./App"
 
-module.exports = sum
-
-console.log("Hello World")
+ReactDOM.render(<App />, document.getElementById("index"));
