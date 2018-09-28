@@ -6,3 +6,6 @@ dist/
 
 # eslint
 .eslintcache
+
+# test
+coverage/
