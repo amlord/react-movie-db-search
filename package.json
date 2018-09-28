@@ -11,13 +11,14 @@
     "test:coverage": "npm run test -- --coverage",
     "test:watch": "npm run test -- --watch",
     "lint": "eslint ./src  --ext .jsx --cache --ignore-pattern .gitignore",
-    "msg:precommit": "echo 'Pre-commit checks...' && exit 0",
-    "msg:prepush": "echo 'Pre-push checks...' && exit 0"
+    "lint:fix": "npm run lint -- --fix",
+    "msg:precommit": "echo 'Pre-commit checks...'",
+    "msg:prepush": "echo 'Pre-push checks...'"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "msg:precommit && npm lint && npm test",
-      "pre-push": "msg:prepush && npm lint && npm test:coverage"
+      "pre-commit": "npm run msg:precommit && npm run lint:fix",
+      "pre-push": "npm run msg:prepush && npm run lint && npm run test"
     }
   },
   "repository": {
