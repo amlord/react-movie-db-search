@@ -4,7 +4,8 @@
   "description": "A base setup project for React & associated tooling",
   "main": "index.js",
   "scripts": {
-    "start": "webpack --mode development",
+    "start": "webpack-dev-server --mode development --open",
+    "start:hot": "npm run start -- --hot",
     "build": "webpack --mode production",
     "test": "jest --config jest.config.json"
   },
@@ -34,7 +35,8 @@
     "jest": "^23.6.0",
     "regenerator-runtime": "^0.12.1",
     "webpack": "^4.20.2",
-    "webpack-cli": "^3.1.1"
+    "webpack-cli": "^3.1.1",
+    "webpack-dev-server": "^3.1.9"
   },
   "dependencies": {
     "react": "^16.5.2",
