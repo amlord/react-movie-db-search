@@ -6,7 +6,7 @@
   "scripts": {
     "start": "webpack --mode development",
     "build": "webpack --mode production",
-    "test": "jest"
+    "test": "jest --config jest.config.json"
   },
   "repository": {
     "type": "git",
@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/amlord/base-react-setup#readme",
   "devDependencies": {
+    "jest": "^23.6.0",
     "webpack": "^4.20.2",
     "webpack-cli": "^3.1.1"
   }

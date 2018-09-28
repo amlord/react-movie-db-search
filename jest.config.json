@@ -1,0 +1,12 @@
+{
+  "testMatch": [
+    "**/?(*.)(spec|test).js"
+  ],
+  "testPathIgnorePatterns": [
+    "/node_modules/"
+  ],
+  "testEnvironment": "node",
+  "collectCoverageFrom": [
+    "src/**/*.{js}"
+  ]
+}
