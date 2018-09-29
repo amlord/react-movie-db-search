@@ -5,5 +5,8 @@
     "describe": true,
     "it": true,
     "expect": true
+  },
+  "rules": {
+    "valid-jsdoc": 1
   }
 }
