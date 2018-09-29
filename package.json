@@ -41,6 +41,8 @@
     "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "^23.6.0",
     "babel-loader": "^8.0.4",
+    "babel-plugin-styled-components": "^1.8.0",
+    "directory-named-webpack-plugin": "^4.0.0",
     "enzyme": "^3.6.0",
     "enzyme-adapter-react-16": "^1.5.0",
     "eslint": "^5.6.1",
@@ -59,6 +61,7 @@
   "dependencies": {
     "prop-types": "^15.6.2",
     "react": "^16.5.2",
-    "react-dom": "^16.5.2"
+    "react-dom": "^16.5.2",
+    "styled-components": "^3.4.9"
   }
 }
