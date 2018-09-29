@@ -15,25 +15,49 @@ ShallowWrapper {
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": undefined,
-    "nodeType": "host",
+    "nodeType": "class",
     "props": Object {
-      "children": "Hot Reloadz!",
+      "children": <App__Title>
+        Base React App!
+      </App__Title>,
     },
     "ref": null,
-    "rendered": "Hot Reloadz!",
-    "type": "div",
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": "Base React App!",
+      },
+      "ref": null,
+      "rendered": "Base React App!",
+      "type": [Function],
+    },
+    "type": [Function],
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "host",
+      "nodeType": "class",
       "props": Object {
-        "children": "Hot Reloadz!",
+        "children": <App__Title>
+          Base React App!
+        </App__Title>,
       },
       "ref": null,
-      "rendered": "Hot Reloadz!",
-      "type": "div",
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": "Base React App!",
+        },
+        "ref": null,
+        "rendered": "Base React App!",
+        "type": [Function],
+      },
+      "type": [Function],
     },
   ],
   Symbol(enzyme.__options__): Object {
