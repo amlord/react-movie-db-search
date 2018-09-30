@@ -69,3 +69,6 @@ npm run lint:fix
 The pre-commit script runs `npm run lint:fix` to fix any style issues before committing.
 ### Pre-push
 The pre-push script runs `npm run lint`, follwed by `npm run test` to ensure that style rules are being followed & all tests run before being pushed to the remote repository.
+
+## TODO
+* cors
