@@ -14,8 +14,8 @@ class TheMovieDb {
   /**
    * Search for movies from search text
    * @param {String} [searchText=] - search text
-   * @param {page} [page=1] - page of results to view
-   * @returns {undefined}
+   * @param {Number} [page=1] - page of results to view
+   * @returns {Object} - a list of matching results
    */
   async getMovies(searchText = '', page = 1) {
     const {
