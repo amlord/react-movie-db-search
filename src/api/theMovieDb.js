@@ -3,8 +3,8 @@ import config from 'config';
 class TheMovieDb {
   /**
    * @constructor
-   * @param {Function} fetch - Fetch API
    * @param {Object} apiConfig - MovieDB API config
+   * @param {Function} fetch - Fetch API
    */
   constructor(apiConfig = config.movieDb.api, fetch = window.fetch) {
     this.fetch = url => fetch(url);
