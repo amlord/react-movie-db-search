@@ -1,5 +1,7 @@
-# base-react-setup
-A base setup project for React &amp; associated tooling
+# React Movie DB Search
+A UI in React to search the Movie DB.
+
+The user can enter some text into a search field, see and browse the results from the Movie DB.
 
 1. [Initial Setup](#initial-setup)
 1. [Useful Scripts](#useful-scripts)
