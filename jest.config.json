@@ -3,13 +3,13 @@
     "./jest.setup.js"
   ],
   "testMatch": [
-    "**/?(*.)(spec|test).js(x)"
+    "**/?(*.)(spec|test).(js|jsx)"
   ],
   "testPathIgnorePatterns": [
     "/node_modules/"
   ],
   "testEnvironment": "jsdom",
   "collectCoverageFrom": [
-    "src/**/*.{js(x)}"
+    "src/**/*.{(js|jsx)}"
   ]
 }
