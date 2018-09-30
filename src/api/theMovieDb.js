@@ -1,18 +1,33 @@
 import config from 'config';
 
-const getMovies = async (query, page = 1) => {
-  const {
-    baseUrl, version, key, language, includeAdult, endpoints: { search },
-  } = config.movieDb.api;
+class TheMovieDb {
+  /**
+   * @constructor
+   * @param {Function} fetch - Fetch API
+   * @param {Object} apiConfig - MovieDB API config
+   */
+  constructor(apiConfig = config.movieDb.api, fetch = window.fetch) {
+    this.fetch = url => fetch(url);
+    this.apiConfig = apiConfig;
+  }
 
-  const result = await fetch(
-    `${baseUrl}/${version}/${search.movies}?api_key=${key}&language=${language}&query=${encodeURI(query)}&page=${page}&include_adult=${includeAdult}`,
-  );
-  const json = await result.json();
+  /**
+   * Search for movies from search text
+   * @param {String} [searchText=] - search text
+   * @param {page} [page=1] - page of results to view
+   * @returns {undefined}
+   */
+  async getMovies(searchText = '', page = 1) {
+    const {
+      baseUrl, version, key, language, includeAdult, endpoints: { search },
+    } = this.apiConfig;
 
-  console.log({ json });
-};
+    const result = await this.fetch(
+      `${baseUrl}/${version}/${search.movies}?api_key=${key}&language=${language}&query=${encodeURI(searchText)}&page=${page}&include_adult=${includeAdult}`,
+    );
 
-export default {
-  getMovies,
-};
+    return result.json();
+  }
+}
+
+export default TheMovieDb;
