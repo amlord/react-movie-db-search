@@ -1,7 +1,7 @@
 # base-react-setup
 A base setup project for React &amp; associated tooling
 
-1. [Initial Setuo](#initial-setup)
+1. [Initial Setup](#initial-setup)
 1. [Useful Scripts](#useful-scripts)
 1. [Automatic Scripts](#automatic-scripts)
 
