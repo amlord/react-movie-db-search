@@ -10,16 +10,24 @@ class App extends Component {
 
     this.TheMovieDb = new TheMovieDb();
 
+    this.state = {
+      results: [],
+    };
+  }
+
+  componentDidMount() {
     this.TheMovieDb.getMovies('fight c').then((results) => {
-      console.log({ results });
+      this.setState({ ...results });
     });
   }
 
   render() {
+    const { results } = this.state;
+    console.log({ results });
     return (
       <>
         <Header />
-        <SearchResults />
+        <SearchResults results={results} />
         <Footer />
       </>
     );

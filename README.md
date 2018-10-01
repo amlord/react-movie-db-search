@@ -72,3 +72,4 @@ The pre-push script runs `npm run lint`, follwed by `npm run test` to ensure tha
 
 ## TODO
 * cors
+* add logo to package

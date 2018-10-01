@@ -1,9 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`App displays correctly 1`] = `
+exports[`SearchBar displays correctly 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <App />,
+  Symbol(enzyme.__unrendered__): <SearchBar />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -15,14 +15,18 @@ ShallowWrapper {
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": undefined,
-    "nodeType": "function",
+    "nodeType": "class",
     "props": Object {
       "children": Array [
-        <Header />,
-        <SearchResults
-          results={Array []}
+        <label
+          htmlFor="search"
+        >
+          Search:
+        </label>,
+        <SearchBar__StyledInput
+          id="search"
+          type="search"
         />,
-        <Footer />,
       ],
     },
     "ref": null,
@@ -30,47 +34,46 @@ ShallowWrapper {
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "function",
-        "props": Object {},
+        "nodeType": "host",
+        "props": Object {
+          "children": "Search:",
+          "htmlFor": "search",
+        },
         "ref": null,
-        "rendered": null,
-        "type": [Function],
+        "rendered": "Search:",
+        "type": "label",
       },
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "function",
+        "nodeType": "class",
         "props": Object {
-          "results": Array [],
+          "id": "search",
+          "type": "search",
         },
         "ref": null,
         "rendered": null,
         "type": [Function],
       },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "function",
-        "props": Object {},
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
     ],
-    "type": Symbol(react.fragment),
+    "type": [Function],
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "function",
+      "nodeType": "class",
       "props": Object {
         "children": Array [
-          <Header />,
-          <SearchResults
-            results={Array []}
+          <label
+            htmlFor="search"
+          >
+            Search:
+          </label>,
+          <SearchBar__StyledInput
+            id="search"
+            type="search"
           />,
-          <Footer />,
         ],
       },
       "ref": null,
@@ -78,34 +81,29 @@ ShallowWrapper {
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "function",
-          "props": Object {},
+          "nodeType": "host",
+          "props": Object {
+            "children": "Search:",
+            "htmlFor": "search",
+          },
           "ref": null,
-          "rendered": null,
-          "type": [Function],
+          "rendered": "Search:",
+          "type": "label",
         },
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "function",
+          "nodeType": "class",
           "props": Object {
-            "results": Array [],
+            "id": "search",
+            "type": "search",
           },
           "ref": null,
           "rendered": null,
           "type": [Function],
         },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {},
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
       ],
-      "type": Symbol(react.fragment),
+      "type": [Function],
     },
   ],
   Symbol(enzyme.__options__): Object {
