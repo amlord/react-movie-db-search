@@ -1,15 +1,26 @@
 import React from 'react';
-// import styled from 'styled-components';
+import PropTypes from 'prop-types';
+import SearchResultsItem from 'components/SearchResultsItem';
+import styled from 'styled-components';
 
-// const StyledSearchBar = styled.div`
-//   background-color: #ececed;
-//   color: #333;
-// `;
+const StyledSearchResultsList = styled.ul`
+  margin: 0;
+  padding: 0;
+  list-style: none;
+`;
 
 const SearchResultsList = ({ results }) => (
-  <>
-    {results.map(result => <div key={result.id}>{result.title}</div>)}
-  </>
+  <StyledSearchResultsList>
+    {results.map(result => <SearchResultsItem key={result.id} title={result.title} />)}
+  </StyledSearchResultsList>
 );
+
+SearchResultsList.defaultProps = {
+  results: [],
+};
+
+SearchResultsList.propTypes = {
+  results: PropTypes.arrayOf(PropTypes.object),
+};
 
 export default SearchResultsList;

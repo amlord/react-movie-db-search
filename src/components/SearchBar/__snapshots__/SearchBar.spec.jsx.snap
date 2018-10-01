@@ -18,11 +18,11 @@ ShallowWrapper {
     "nodeType": "class",
     "props": Object {
       "children": Array [
-        <label
+        <SearchBar__StyledLabel
           htmlFor="search"
         >
           Search:
-        </label>,
+        </SearchBar__StyledLabel>,
         <SearchBar__StyledInput
           id="search"
           type="search"
@@ -34,14 +34,14 @@ ShallowWrapper {
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "host",
+        "nodeType": "class",
         "props": Object {
           "children": "Search:",
           "htmlFor": "search",
         },
         "ref": null,
         "rendered": "Search:",
-        "type": "label",
+        "type": [Function],
       },
       Object {
         "instance": null,
@@ -65,11 +65,11 @@ ShallowWrapper {
       "nodeType": "class",
       "props": Object {
         "children": Array [
-          <label
+          <SearchBar__StyledLabel
             htmlFor="search"
           >
             Search:
-          </label>,
+          </SearchBar__StyledLabel>,
           <SearchBar__StyledInput
             id="search"
             type="search"
@@ -81,14 +81,14 @@ ShallowWrapper {
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "host",
+          "nodeType": "class",
           "props": Object {
             "children": "Search:",
             "htmlFor": "search",
           },
           "ref": null,
           "rendered": "Search:",
-          "type": "label",
+          "type": [Function],
         },
         Object {
           "instance": null,

@@ -1,11 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`SearchResultsList displays correctly 1`] = `
+exports[`SearchResult displays correctly 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <SearchResultsList
-    results={Array []}
-  />,
+  Symbol(enzyme.__unrendered__): <SearchResult />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -17,25 +15,25 @@ ShallowWrapper {
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": undefined,
-    "nodeType": "class",
+    "nodeType": "host",
     "props": Object {
-      "children": Array [],
+      "children": "SEARCH RESULT",
     },
     "ref": null,
-    "rendered": Array [],
-    "type": [Function],
+    "rendered": "SEARCH RESULT",
+    "type": "div",
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "class",
+      "nodeType": "host",
       "props": Object {
-        "children": Array [],
+        "children": "SEARCH RESULT",
       },
       "ref": null,
-      "rendered": Array [],
-      "type": [Function],
+      "rendered": "SEARCH RESULT",
+      "type": "div",
     },
   ],
   Symbol(enzyme.__options__): Object {

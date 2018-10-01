@@ -21,6 +21,7 @@ ShallowWrapper {
         <Header />,
         <SearchResults
           results={Array []}
+          totalResults={0}
         />,
         <Footer />,
       ],
@@ -42,6 +43,7 @@ ShallowWrapper {
         "nodeType": "function",
         "props": Object {
           "results": Array [],
+          "totalResults": 0,
         },
         "ref": null,
         "rendered": null,
@@ -69,6 +71,7 @@ ShallowWrapper {
           <Header />,
           <SearchResults
             results={Array []}
+            totalResults={0}
           />,
           <Footer />,
         ],
@@ -90,6 +93,7 @@ ShallowWrapper {
           "nodeType": "function",
           "props": Object {
             "results": Array [],
+            "totalResults": 0,
           },
           "ref": null,
           "rendered": null,

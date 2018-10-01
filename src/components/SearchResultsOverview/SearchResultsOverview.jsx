@@ -1,12 +1,15 @@
 import React from 'react';
-// import styled from 'styled-components';
+import PropTypes from 'prop-types';
 
-// const StyledSearchResultsOverview = styled.div`
-//   margin-top: 20px;
-// `;
-
-const SearchResultsOverview = () => (
-  <div>SEARCH RESULTS OVERVIEW</div>
+const SearchResultsOverview = ({ totalResults }) => (
+  <div>
+    <span>Total Results: </span>
+    <strong>{totalResults}</strong>
+  </div>
 );
+
+SearchResultsOverview.propTypes = {
+  totalResults: PropTypes.number.isRequired,
+};
 
 export default SearchResultsOverview;

@@ -4,7 +4,7 @@ import SearchResultsOverview from './SearchResultsOverview';
 
 describe('SearchResultsOverview', () => {
   it('displays correctly', () => {
-    const wrapper = shallow(<SearchResultsOverview />);
+    const wrapper = shallow(<SearchResultsOverview totalResults={12} />);
     expect(wrapper).toMatchSnapshot();
   });
 });

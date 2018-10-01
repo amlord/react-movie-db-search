@@ -2,7 +2,7 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import SearchResultsList from './SearchResultsList';
 
-describe('SearchBar', () => {
+describe('SearchResultsList', () => {
   it('displays correctly', () => {
     const wrapper = shallow(<SearchResultsList results={[]} />);
     expect(wrapper).toMatchSnapshot();

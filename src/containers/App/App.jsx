@@ -17,17 +17,18 @@ class App extends Component {
 
   componentDidMount() {
     this.TheMovieDb.getMovies('fight c').then((results) => {
+      console.log({ results });
       this.setState({ ...results });
     });
   }
 
   render() {
-    const { results } = this.state;
-    console.log({ results });
+    const { results, total_results: totalResults } = this.state;
+
     return (
       <>
         <Header />
-        <SearchResults results={results} />
+        <SearchResults results={results} totalResults={totalResults} />
         <Footer />
       </>
     );

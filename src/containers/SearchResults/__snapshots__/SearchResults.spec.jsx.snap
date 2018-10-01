@@ -5,6 +5,7 @@ ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <SearchResults
     results={Array []}
+    totalResults={0}
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -21,7 +22,9 @@ ShallowWrapper {
     "props": Object {
       "children": <Wrapper>
         <SearchBar />
-        <SearchResultsOverview />
+        <SearchResultsOverview
+          totalResults={0}
+        />
         <Pagination />
         <SearchResultsList
           results={Array []}
@@ -37,7 +40,9 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <SearchBar />,
-          <SearchResultsOverview />,
+          <SearchResultsOverview
+            totalResults={0}
+          />,
           <Pagination />,
           <SearchResultsList
             results={Array []}
@@ -60,7 +65,9 @@ ShallowWrapper {
           "instance": null,
           "key": undefined,
           "nodeType": "function",
-          "props": Object {},
+          "props": Object {
+            "totalResults": 0,
+          },
           "ref": null,
           "rendered": null,
           "type": [Function],
@@ -107,7 +114,9 @@ ShallowWrapper {
       "props": Object {
         "children": <Wrapper>
           <SearchBar />
-          <SearchResultsOverview />
+          <SearchResultsOverview
+            totalResults={0}
+          />
           <Pagination />
           <SearchResultsList
             results={Array []}
@@ -123,7 +132,9 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <SearchBar />,
-            <SearchResultsOverview />,
+            <SearchResultsOverview
+              totalResults={0}
+            />,
             <Pagination />,
             <SearchResultsList
               results={Array []}
@@ -146,7 +157,9 @@ ShallowWrapper {
             "instance": null,
             "key": undefined,
             "nodeType": "function",
-            "props": Object {},
+            "props": Object {
+              "totalResults": 0,
+            },
             "ref": null,
             "rendered": null,
             "type": [Function],
