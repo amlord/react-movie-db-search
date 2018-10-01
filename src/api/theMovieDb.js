@@ -22,11 +22,15 @@ class TheMovieDb {
       baseUrl, version, key, language, includeAdult, endpoints: { search },
     } = this.apiConfig;
 
-    const result = await this.fetch(
-      `${baseUrl}/${version}/${search.movies}?api_key=${key}&language=${language}&query=${encodeURI(searchText)}&page=${page}&include_adult=${includeAdult}`,
-    );
+    try {
+      const result = await this.fetch(
+        `${baseUrl}/${version}/${search.movies}?api_key=${key}&language=${language}&query=${encodeURI(searchText)}&page=${page}&include_adult=${includeAdult}`,
+      );
 
-    return result.json();
+      return result.json();
+    } catch (error) {
+      return { error };
+    }
   }
 }
 
