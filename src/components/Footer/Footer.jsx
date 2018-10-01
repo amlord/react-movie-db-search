@@ -9,7 +9,7 @@ const StyledFooter = styled.footer`
 
 const Footer = () => (
   <StyledFooter>
-    <Wrapper>FOOTER</Wrapper>
+    <Wrapper><small>By Andrew Lord &copy; 2018</small></Wrapper>
   </StyledFooter>
 );
 

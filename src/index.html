@@ -8,9 +8,24 @@
   <meta name="description" content="A base setup project for React &amp; associated tooling">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <style>
-    html {
-      height: 100%;
+    /* Font Definition */
+    @font-face {
+      font-family: 'EncodeSansNarrowLight';
+      src: url('https://s3.eu-west-2.amazonaws.com/amlstatic/fonts/encodesansnarrow-light-webfont.woff2') format('woff2'),
+          url('https://s3.eu-west-2.amazonaws.com/amlstatic/fonts/encodesansnarrow-light-webfont.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    /* General */
+    html,
+    body {
       background-color: #081c24;
+      font-family: EncodeSansNarrowLight, helvetica, arial, sans-serif;
+      height: 100%;
+      width: 100%;
+      padding: 0;
+      margin: 0;
     }
   </style>
 </head>

@@ -11,5 +11,6 @@
   "testEnvironment": "jsdom",
   "collectCoverageFrom": [
     "src/**/*.{(js|jsx)}"
-  ]
+  ],
+  "resolver": "jest-directory-named-resolver"
 }
