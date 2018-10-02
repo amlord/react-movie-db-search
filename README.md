@@ -6,6 +6,8 @@ The user can enter some text into a search field, see and browse the results fro
 1. [Initial Setup](#initial-setup)
 1. [Useful Scripts](#useful-scripts)
 1. [Automatic Scripts](#automatic-scripts)
+1. [Project Structure](#project-structure)
+1. [Still to do](#to-do)
 
 ## Initial setup
 Ensure correct version of Node (with [Node Version Manager](https://github.com/creationix/nvm)):
@@ -70,6 +72,23 @@ The pre-commit script runs `npm run lint:fix` to fix any style issues before com
 ### Pre-push
 The pre-push script runs `npm run lint`, follwed by `npm run test` to ensure that style rules are being followed & all tests run before being pushed to the remote repository.
 
-## TODO
-* cors
-* add logo to package
+## Project Structure
+The main application code is con`src`
+* **config** - project configuration
+* **src**
+  * **api** - The Movie DB API
+  * **components** - presentational components
+  * **containers** - compositional components
+
+## TO DO
+* add logo to package (instead of linking externally)
+* pagination button functionality
+* improve test coverage (especially functional tests, as opposed to snapshot tests)
+* improve error handling
+* CORS - server implementation for when not running locally
+* add ability to switch between search types (all, movies, tv shows & people)
+* add configuration methods to API file (in order to fetch images related to results)
+* add background image to search result panels
+* make search result panels clickable (linking to result details)
+* add empty search result UI state
+* add 'loader' to show activity following search
