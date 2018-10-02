@@ -12,10 +12,10 @@ const StyledMain = styled.main`
   color: #333;
 `;
 
-const SearchResults = ({ results, totalResults }) => (
+const SearchResults = ({ results, totalResults, onSearchUpdate }) => (
   <StyledMain>
     <Wrapper>
-      <SearchBar />
+      <SearchBar onSearchUpdate={onSearchUpdate} />
       <SearchResultsOverview totalResults={totalResults} />
       <Pagination />
       <SearchResultsList results={results} />
@@ -32,6 +32,7 @@ SearchResults.defaultProps = {
 SearchResults.propTypes = {
   results: PropTypes.arrayOf(PropTypes.object),
   totalResults: PropTypes.number,
+  onSearchUpdate: PropTypes.func.isRequired,
 };
 
 export default SearchResults;

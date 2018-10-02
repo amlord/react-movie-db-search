@@ -4,7 +4,7 @@ import SearchBar from './SearchBar';
 
 describe('SearchBar', () => {
   it('displays correctly', () => {
-    const wrapper = shallow(<SearchBar />);
+    const wrapper = shallow(<SearchBar onSearchUpdate={jest.fn()} />);
     expect(wrapper).toMatchSnapshot();
   });
 });

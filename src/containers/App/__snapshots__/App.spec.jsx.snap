@@ -20,6 +20,7 @@ ShallowWrapper {
       "children": Array [
         <Header />,
         <SearchResults
+          onSearchUpdate={[Function]}
           results={Array []}
           totalResults={0}
         />,
@@ -42,6 +43,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
+          "onSearchUpdate": [Function],
           "results": Array [],
           "totalResults": 0,
         },
@@ -70,6 +72,7 @@ ShallowWrapper {
         "children": Array [
           <Header />,
           <SearchResults
+            onSearchUpdate={[Function]}
             results={Array []}
             totalResults={0}
           />,
@@ -92,6 +95,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
+            "onSearchUpdate": [Function],
             "results": Array [],
             "totalResults": 0,
           },

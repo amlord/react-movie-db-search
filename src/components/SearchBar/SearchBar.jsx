@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 const StyledSearchBar = styled.div`
@@ -25,11 +26,15 @@ const StyledInput = styled.input`
   padding: 0 5px;
 `;
 
-const SearchBar = () => (
+const SearchBar = ({ onSearchUpdate }) => (
   <StyledSearchBar>
     <StyledLabel htmlFor="search">Search:</StyledLabel>
-    <StyledInput type="search" id="search" />
+    <StyledInput type="search" id="search" onChange={event => onSearchUpdate(event.target.value)} />
   </StyledSearchBar>
 );
+
+SearchBar.propTypes = {
+  onSearchUpdate: PropTypes.func.isRequired,
+};
 
 export default SearchBar;

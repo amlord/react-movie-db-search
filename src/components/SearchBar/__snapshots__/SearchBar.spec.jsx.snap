@@ -3,7 +3,9 @@
 exports[`SearchBar displays correctly 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <SearchBar />,
+  Symbol(enzyme.__unrendered__): <SearchBar
+    onSearchUpdate={[MockFunction]}
+  />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -25,6 +27,7 @@ ShallowWrapper {
         </SearchBar__StyledLabel>,
         <SearchBar__StyledInput
           id="search"
+          onChange={[Function]}
           type="search"
         />,
       ],
@@ -49,6 +52,7 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "id": "search",
+          "onChange": [Function],
           "type": "search",
         },
         "ref": null,
@@ -72,6 +76,7 @@ ShallowWrapper {
           </SearchBar__StyledLabel>,
           <SearchBar__StyledInput
             id="search"
+            onChange={[Function]}
             type="search"
           />,
         ],
@@ -96,6 +101,7 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "id": "search",
+            "onChange": [Function],
             "type": "search",
           },
           "ref": null,

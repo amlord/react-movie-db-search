@@ -4,7 +4,11 @@ import SearchResults from './SearchResults';
 
 describe('SearchResults', () => {
   it('displays correctly', () => {
-    const wrapper = shallow(<SearchResults results={[]} />);
+    const props = {
+      results: [],
+      onSearchUpdate: jest.fn(),
+    };
+    const wrapper = shallow(<SearchResults {...props} />);
     expect(wrapper).toMatchSnapshot();
   });
 });

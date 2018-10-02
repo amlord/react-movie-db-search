@@ -12,8 +12,10 @@ module.exports = {
     it: true,
     expect: true
   },
+  parser: "babel-eslint",
   rules: {
-    "valid-jsdoc": 1
+    "valid-jsdoc": 1,
+    "strict": 0
   },
   settings: {
     "import/resolver": {
