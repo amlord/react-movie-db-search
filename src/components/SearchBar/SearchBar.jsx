@@ -9,7 +9,7 @@ const StyledSearchBar = styled.div`
   padding: 5px;
   margin-bottom: 20px;
   display: grid;
-  grid-template-columns: 70px auto;
+  grid-template-columns: 120px auto;
 `;
 
 const StyledLabel = styled.label`
@@ -28,8 +28,12 @@ const StyledInput = styled.input`
 
 const SearchBar = ({ onSearchUpdate }) => (
   <StyledSearchBar>
-    <StyledLabel htmlFor="search">Search:</StyledLabel>
-    <StyledInput type="search" id="search" onChange={event => onSearchUpdate(event.target.value)} />
+    <StyledLabel htmlFor="search">Search Movies:</StyledLabel>
+    <StyledInput
+      type="search"
+      id="search"
+      onChange={event => onSearchUpdate(event.target.value)}
+    />
   </StyledSearchBar>
 );
 

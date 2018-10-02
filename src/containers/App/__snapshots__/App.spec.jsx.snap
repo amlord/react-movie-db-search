@@ -21,7 +21,9 @@ ShallowWrapper {
         <Header />,
         <SearchResults
           onSearchUpdate={[Function]}
+          page={0}
           results={Array []}
+          totalPages={0}
           totalResults={0}
         />,
         <Footer />,
@@ -44,7 +46,9 @@ ShallowWrapper {
         "nodeType": "function",
         "props": Object {
           "onSearchUpdate": [Function],
+          "page": 0,
           "results": Array [],
+          "totalPages": 0,
           "totalResults": 0,
         },
         "ref": null,
@@ -73,7 +77,9 @@ ShallowWrapper {
           <Header />,
           <SearchResults
             onSearchUpdate={[Function]}
+            page={0}
             results={Array []}
+            totalPages={0}
             totalResults={0}
           />,
           <Footer />,
@@ -96,7 +102,9 @@ ShallowWrapper {
           "nodeType": "function",
           "props": Object {
             "onSearchUpdate": [Function],
+            "page": 0,
             "results": Array [],
+            "totalPages": 0,
             "totalResults": 0,
           },
           "ref": null,

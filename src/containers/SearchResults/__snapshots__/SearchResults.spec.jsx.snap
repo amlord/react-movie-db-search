@@ -5,7 +5,9 @@ ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <SearchResults
     onSearchUpdate={[MockFunction]}
+    page={0}
     results={Array []}
+    totalPages={0}
     totalResults={0}
   />,
   Symbol(enzyme.__renderer__): Object {
@@ -28,11 +30,17 @@ ShallowWrapper {
         <SearchResultsOverview
           totalResults={0}
         />
-        <Pagination />
+        <Pagination
+          page={0}
+          totalPages={0}
+        />
         <SearchResultsList
           results={Array []}
         />
-        <Pagination />
+        <Pagination
+          page={0}
+          totalPages={0}
+        />
       </Wrapper>,
     },
     "ref": null,
@@ -48,11 +56,17 @@ ShallowWrapper {
           <SearchResultsOverview
             totalResults={0}
           />,
-          <Pagination />,
+          <Pagination
+            page={0}
+            totalPages={0}
+          />,
           <SearchResultsList
             results={Array []}
           />,
-          <Pagination />,
+          <Pagination
+            page={0}
+            totalPages={0}
+          />,
         ],
       },
       "ref": null,
@@ -83,7 +97,10 @@ ShallowWrapper {
           "instance": null,
           "key": undefined,
           "nodeType": "function",
-          "props": Object {},
+          "props": Object {
+            "page": 0,
+            "totalPages": 0,
+          },
           "ref": null,
           "rendered": null,
           "type": [Function],
@@ -103,7 +120,10 @@ ShallowWrapper {
           "instance": null,
           "key": undefined,
           "nodeType": "function",
-          "props": Object {},
+          "props": Object {
+            "page": 0,
+            "totalPages": 0,
+          },
           "ref": null,
           "rendered": null,
           "type": [Function],
@@ -126,11 +146,17 @@ ShallowWrapper {
           <SearchResultsOverview
             totalResults={0}
           />
-          <Pagination />
+          <Pagination
+            page={0}
+            totalPages={0}
+          />
           <SearchResultsList
             results={Array []}
           />
-          <Pagination />
+          <Pagination
+            page={0}
+            totalPages={0}
+          />
         </Wrapper>,
       },
       "ref": null,
@@ -146,11 +172,17 @@ ShallowWrapper {
             <SearchResultsOverview
               totalResults={0}
             />,
-            <Pagination />,
+            <Pagination
+              page={0}
+              totalPages={0}
+            />,
             <SearchResultsList
               results={Array []}
             />,
-            <Pagination />,
+            <Pagination
+              page={0}
+              totalPages={0}
+            />,
           ],
         },
         "ref": null,
@@ -181,7 +213,10 @@ ShallowWrapper {
             "instance": null,
             "key": undefined,
             "nodeType": "function",
-            "props": Object {},
+            "props": Object {
+              "page": 0,
+              "totalPages": 0,
+            },
             "ref": null,
             "rendered": null,
             "type": [Function],
@@ -201,7 +236,10 @@ ShallowWrapper {
             "instance": null,
             "key": undefined,
             "nodeType": "function",
-            "props": Object {},
+            "props": Object {
+              "page": 0,
+              "totalPages": 0,
+            },
             "ref": null,
             "rendered": null,
             "type": [Function],

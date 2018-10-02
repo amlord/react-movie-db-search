@@ -5,8 +5,11 @@ import styled from 'styled-components';
 
 const StyledSearchResultsList = styled.ul`
   margin: 0;
-  padding: 0;
+  padding: 0px;
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 `;
 
 const SearchResultsList = ({ results }) => (

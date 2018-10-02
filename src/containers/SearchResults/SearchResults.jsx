@@ -12,14 +12,16 @@ const StyledMain = styled.main`
   color: #333;
 `;
 
-const SearchResults = ({ results, totalResults, onSearchUpdate }) => (
+const SearchResults = ({
+  results, totalResults, page, totalPages, onSearchUpdate,
+}) => (
   <StyledMain>
     <Wrapper>
       <SearchBar onSearchUpdate={onSearchUpdate} />
       <SearchResultsOverview totalResults={totalResults} />
-      <Pagination />
+      <Pagination page={page} totalPages={totalPages} />
       <SearchResultsList results={results} />
-      <Pagination />
+      <Pagination page={page} totalPages={totalPages} />
     </Wrapper>
   </StyledMain>
 );
@@ -27,12 +29,16 @@ const SearchResults = ({ results, totalResults, onSearchUpdate }) => (
 SearchResults.defaultProps = {
   results: [],
   totalResults: 0,
+  page: 0,
+  totalPages: 0,
 };
 
 SearchResults.propTypes = {
   results: PropTypes.arrayOf(PropTypes.object),
   totalResults: PropTypes.number,
   onSearchUpdate: PropTypes.func.isRequired,
+  page: PropTypes.number,
+  totalPages: PropTypes.number,
 };
 
 export default SearchResults;

@@ -22,6 +22,7 @@ class App extends Component {
    * @returns {undefined}
    */
   searchMovies = (searchText) => {
+    // get list of movies from the API
     this.TheMovieDb.getMovies(searchText).then((response) => {
       this.setState({ ...response });
     });
@@ -39,7 +40,9 @@ class App extends Component {
 
     // prevent search if no search text
     if (searchText.length === 0) {
-      this.setState({ results: [], total_results: 0 });
+      this.setState({
+        results: [], total_results: 0, page: 0, total_pages: 0,
+      });
     } else {
       // prevent firing off too many fetches in short succession
       this.timeout = setTimeout(() => {
@@ -49,7 +52,9 @@ class App extends Component {
   }
 
   render() {
-    const { results, total_results: totalResults } = this.state;
+    const {
+      results, total_results: totalResults, page, total_pages: totalPages,
+    } = this.state;
 
     return (
       <>
@@ -57,6 +62,8 @@ class App extends Component {
         <SearchResults
           results={results}
           totalResults={totalResults}
+          page={page}
+          totalPages={totalPages}
           onSearchUpdate={this.handleSearchUpdate}
         />
         <Footer />

@@ -4,7 +4,7 @@ import Pagination from './Pagination';
 
 describe('Pagination', () => {
   it('displays correctly', () => {
-    const wrapper = shallow(<Pagination />);
+    const wrapper = shallow(<Pagination page={3} totalPages={16} />);
     expect(wrapper).toMatchSnapshot();
   });
 });

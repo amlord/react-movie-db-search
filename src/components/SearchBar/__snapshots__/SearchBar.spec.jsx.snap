@@ -23,7 +23,7 @@ ShallowWrapper {
         <SearchBar__StyledLabel
           htmlFor="search"
         >
-          Search:
+          Search Movies:
         </SearchBar__StyledLabel>,
         <SearchBar__StyledInput
           id="search"
@@ -39,11 +39,11 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "children": "Search:",
+          "children": "Search Movies:",
           "htmlFor": "search",
         },
         "ref": null,
-        "rendered": "Search:",
+        "rendered": "Search Movies:",
         "type": [Function],
       },
       Object {
@@ -72,7 +72,7 @@ ShallowWrapper {
           <SearchBar__StyledLabel
             htmlFor="search"
           >
-            Search:
+            Search Movies:
           </SearchBar__StyledLabel>,
           <SearchBar__StyledInput
             id="search"
@@ -88,11 +88,11 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "children": "Search:",
+            "children": "Search Movies:",
             "htmlFor": "search",
           },
           "ref": null,
-          "rendered": "Search:",
+          "rendered": "Search Movies:",
           "type": [Function],
         },
         Object {
