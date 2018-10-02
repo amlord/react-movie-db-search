@@ -20,7 +20,7 @@ Install packages:
 npm install
 ```
 
-Create `.env` file with the following contents to hold **private API key** (where "xxxxxxxxxxx" is the private key to use):
+Create `.env` file (in the project root) with the following contents to hold **private API key** (where "xxxxxxxxxxx" is the private key to use):
 ```
 REACT_APP_MOVIE_DB_API_KEY=xxxxxxxxxxx
 ```
